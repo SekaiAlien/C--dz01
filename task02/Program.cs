@@ -6,34 +6,20 @@
 // a = -9 b = -3 -> max = -3
 
 
-Console.WriteLine("Напиши какое-нибудь число: ");
-int numberA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введиите число А: ");
+int a = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Напиши еще какое-нибудь число, а я их сравню: ");
-int numberB = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число В: ");
+int b = Convert.ToInt32(Console.ReadLine());
 
-if(numberA == numberB)
+if(a > b)
 {
-    Console.WriteLine("Ого! Да они же равны!");
+    Console.Write("max = ");
+    Console.WriteLine(a);
 }
 
 else
 {
-    if(numberA > numberB)
-    {
-    Console.WriteLine();
-    Console.Write(numberA);
-    Console.WriteLine(" больше второго числа");
-    Console.Write("А меньшее число: ");
-    Console.WriteLine(numberB);
-    }
-
-    else
-    {
-        Console.WriteLine();
-        Console.Write(numberB);
-        Console.WriteLine(" больше первого числа");
-        Console.Write("А меньшее число: ");
-        Console.WriteLine(numberA);
-    }
+    Console.Write("max = ");
+    Console.WriteLine(b);
 }
